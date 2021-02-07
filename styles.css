@@ -6,12 +6,12 @@
 
 body {
     background-color: #2F303A;
-    margin: 0;
-    padding: 0;
+    color: white;
     font-family: Poppins, sans-serif;
     font: size 1.2rem;
-    color: white;
+    margin: 0;
     min-height: 100vh;
+    padding: 0;
 }
 
 .full-height-grow {
@@ -31,14 +31,17 @@ body {
     margin-left: 1rem;
 }
 
-.header {
+.header, .main-footer .container {/*TODO:*/
     align-items: center;
     display: flex;
-    height: 120px;
     justify-content: space-between;
 }
 
-.header-nav ul {
+.header {
+    height: 120px;
+}
+
+.header-nav ul, .footer-nav ul{
     color: inherit;
     display: flex;
     list-style: none;
@@ -46,7 +49,7 @@ body {
     padding: 0;
 }
 
-.header-nav a {
+.header-nav a, .footer-nav a {
     color: inherit;
     text-decoration: none;
     padding: 1rem;
@@ -56,10 +59,29 @@ body {
     color: #adadad;
 }
 
+.social-link img {
+    width: 1em;
+    margin-right: .4rem;
+}
+
+
+.main-footer {
+    height: 65px;
+    background-color: #202027;
+    display: flex;
+    font-weight: bold;
+}
+
+.main-footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+
 .container {
     margin: 0 auto;
     max-width: 1275px;
     padding:0 40px;
+    flex-grow: 1;
     /*meu*/
     width: 95vw;
 }

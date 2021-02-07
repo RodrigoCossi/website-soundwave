@@ -73,7 +73,7 @@
     z-index: -1;
 }
 
-.home-page-circle-3::before {
+.home-page-circle-3::before { /*after works too*/
     background-color: rgba(52, 138, 178, 0.1);
     border-radius:50%;
     content: '';
